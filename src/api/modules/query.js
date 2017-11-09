@@ -42,8 +42,8 @@ export const generateControllers = (model, overrides = {}) => {
     getOne: getOne(model),
     deleteOne: deleteOne(model),
     updateOne: updateOne(model),
-    createOne: createOne(model);
-  }
+    createOne: createOne(model)
+  };
 
-  return {...defaults, ...overrides};
-}
+  return { ...defaults, ...overrides };
+};
