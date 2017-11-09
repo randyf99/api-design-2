@@ -5,8 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack --colors --progress",
-    "test:unit":
-      "NODE_ENV=testing rm -rf ./tmp/mocha-webpack && mocha-webpack --webpack-config webpack.testing.js \"src/**/*.spec.js\" --timeout 10000 --require source-map-support/register",
+    "test:unit": "NODE_ENV=testing rm -rf ./tmp/mocha-webpack && mocha-webpack --webpack-config webpack.testing.js \"src/**/*.spec.js\" --timeout 10000 --require source-map-support/register",
     "test": "yarn test:unit"
   },
   "dependencies": {
@@ -25,6 +24,7 @@
     "babel-plugin-transform-regenerator": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
     "chai": "^4.1.2",
     "chai-http": "^3.0.0",
     "graphql-tag": "^2.5.0",
