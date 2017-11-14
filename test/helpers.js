@@ -1,6 +1,6 @@
-import '../src/api/resources/user/user.model';
-import '../src/api/resources/playlist/playlist.model';
-import '../src/api/resources/song/song.model';
+// import '../src/api/resources/user/user.model';
+// import '../src/api/resources/playlist/playlist.model';
+// import '../src/api/resources/song/song.model';
 import mongoose from 'mongoose';
 import config from '~/config';
 

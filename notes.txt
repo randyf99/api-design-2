@@ -1,0 +1,14 @@
+GRAPHQL Vs REST
+
+graphql
+- One route
+- Not based on HTTP verbs
+- Strict data typing
+- interactive docs
+- Works well with a component architecture
+- Advanced data resolving
+
+REST
+- Many routes
+- Based on HTTP verbs
+- Cacheable on a network level
