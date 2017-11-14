@@ -1,9 +1,9 @@
 import { User } from '../resources/user/user.model';
 import jwt from 'jsonwebtoken';
+import config from '../../config';
 import expressJwt from 'express-jwt';
-const jwtSecret = 'blueRhinoJumps';
 
-const checkToken = expressJwt({ secret: jwtSecret });
+const checkToken = expressJwt({ secret: config.secrets.JWT_SECRET });
 const disableAuth = false;
 
 export const signin = (req, res, next) => {
@@ -85,6 +85,6 @@ export const verifyUser = () => (req, res, next) => {
     .catch(error => next(err));
 };
 
-export const signToken = id => jwt.sign({ id }, jwtSecret, { expiresIn: '30d' });
+export const signToken = id => jwt.sign({ id }, config.secrets.JWT_SECRET, { expiresIn: config.expireTime });
 
 export const protect = [decodeToken(), getFreshUser()];

@@ -1,4 +1,5 @@
 import http from 'http';
+import appConfig from './config';
 
 import { createServer } from 'http';
 
@@ -7,8 +8,8 @@ import app from './server';
 const server = createServer(app);
 let currentApp = app;
 
-server.listen(3000, () => {
-  console.log('Server listening on port 3000');
+server.listen(appConfig.port, () => {
+  console.log(`Server listening on port ${appConfig.port}`);
 });
 
 if (module.hot) {
