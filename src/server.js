@@ -10,7 +10,7 @@ setupMiddware(app);
 connect();
 
 app.use('/signin', signin);
-app.use('/api', restRouter);
+app.use('/api', protect, restRouter);
 
 app.get('/', (req, res) => {
   res.json({ ok: false });
