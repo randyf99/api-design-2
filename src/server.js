@@ -6,6 +6,7 @@ import { signin, protect } from './api/modules/auth';
 
 const app = express();
 
+setupMiddware(app);
 connect();
 
 app.use('/signin', signin);
