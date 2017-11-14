@@ -4,7 +4,7 @@ import config from '../../config';
 import expressJwt from 'express-jwt';
 
 const checkToken = expressJwt({ secret: config.secrets.JWT_SECRET });
-const disableAuth = false;
+const disableAuth = true;
 
 export const signin = (req, res, next) => {
   // req.user will be there from the middleware
