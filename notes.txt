@@ -12,3 +12,11 @@ REST
 - Many routes
 - Based on HTTP verbs
 - Cacheable on a network level
+
+Final Node.JS Project
+- You should have a dataset to work with (recommend the mongodb datsets)
+- REST API using express, mongoose
+- You need to implement CRUD 
+- Once completed, you need to implement the front-end
+- The front-end must implement full CRUD.
+- This is due: Sunday the 19th at midnight. NO EXCEPTIONS!! If not complete, turn in what you have.
