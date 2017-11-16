@@ -14,9 +14,11 @@ REST
 - Cacheable on a network level
 
 Final Node.JS Project
-- You should have a dataset to work with (recommend the mongodb datsets)
+- You should have a dataset to work with (recommend the mongodb datasets)
 - REST API using express, mongoose
-- You need to implement CRUD 
+- You need to implement CRUD
 - Once completed, you need to implement the front-end
 - The front-end must implement full CRUD.
 - This is due: Sunday the 19th at midnight. NO EXCEPTIONS!! If not complete, turn in what you have.
+
+localhost:3000/api/restaurant

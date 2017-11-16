@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-export const schema = {
+const songSchema = new mongoose.Schema({
   title: {
     type: String,
     required: [true, 'Song must have a title']
@@ -23,8 +23,6 @@ export const schema = {
     required: true,
     default: false
   }
-};
-
-const songSchema = new mongoose.Schema(schema);
+});
 
 export const Song = mongoose.model('song', songSchema);

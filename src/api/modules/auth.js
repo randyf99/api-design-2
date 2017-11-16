@@ -4,7 +4,6 @@ import config from '../../config';
 import expressJwt from 'express-jwt';
 
 const checkToken = expressJwt({ secret: config.secrets.JWT_SECRET });
-const disableAuth = true;
 
 export const signin = (req, res, next) => {
   // req.user will be there from the middleware
@@ -15,7 +14,7 @@ export const signin = (req, res, next) => {
 };
 
 export const decodeToken = () => (req, res, next) => {
-  if (disableAuth) {
+  if (config.disableAuth) {
     return next();
   }
   // make it optional to place token on query string
